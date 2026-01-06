@@ -1,0 +1,43 @@
+{
+  "name": "Workout",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Workout date"
+    },
+    "exercise_id": {
+      "type": "string",
+      "description": "Reference to Exercise entity"
+    },
+    "sets": {
+      "type": "integer",
+      "description": "Number of sets"
+    },
+    "reps": {
+      "type": "integer",
+      "description": "Reps per set"
+    },
+    "weight": {
+      "type": "number",
+      "description": "Weight in kg"
+    },
+    "duration_minutes": {
+      "type": "integer",
+      "description": "Workout duration in minutes"
+    },
+    "calories_burned": {
+      "type": "number",
+      "description": "Estimated calories burned"
+    },
+    "notes": {
+      "type": "string",
+      "description": "User notes"
+    }
+  },
+  "required": [
+    "date",
+    "exercise_id"
+  ]
+}

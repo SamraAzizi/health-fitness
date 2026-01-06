@@ -1,0 +1,44 @@
+{
+  "name": "Exercise",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Exercise name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Chest",
+        "Back",
+        "Legs",
+        "Arms",
+        "Shoulders",
+        "Core",
+        "Cardio"
+      ],
+      "description": "Exercise category"
+    },
+    "muscle_group": {
+      "type": "string",
+      "description": "Primary muscle group targeted"
+    },
+    "equipment": {
+      "type": "string",
+      "description": "Equipment needed"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Image URL of exercise"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description"
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "muscle_group"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "NutritionEntry",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of entry"
+    },
+    "meal_type": {
+      "type": "string",
+      "enum": [
+        "breakfast",
+        "lunch",
+        "dinner",
+        "snacks"
+      ],
+      "description": "Meal type"
+    },
+    "food_name": {
+      "type": "string",
+      "description": "Name of food"
+    },
+    "calories": {
+      "type": "number",
+      "description": "Calorie amount"
+    },
+    "protein": {
+      "type": "number",
+      "description": "Protein in grams"
+    },
+    "carbs": {
+      "type": "number",
+      "description": "Carbs in grams"
+    },
+    "fat": {
+      "type": "number",
+      "description": "Fat in grams"
+    },
+    "quantity": {
+      "type": "string",
+      "description": "Quantity (e.g., '100g', '1 cup')"
+    }
+  },
+  "required": [
+    "date",
+    "meal_type",
+    "food_name",
+    "calories"
+  ]
+}
