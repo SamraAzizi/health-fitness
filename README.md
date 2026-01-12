@@ -1,6 +1,6 @@
 # Health Tracker App
 
-A comprehensive health and fitness tracking application built with Next.js, TypeScript, and Base44.
+A comprehensive health and fitness tracking application built with Next.js, TypeScript,.
 
 ## Features
 
@@ -16,7 +16,7 @@ A comprehensive health and fitness tracking application built with Next.js, Type
 ### Prerequisites
 
 - Node.js 18+ installed
-- A Base44 project ID
+
 
 ### Installation
 
@@ -25,17 +25,14 @@ A comprehensive health and fitness tracking application built with Next.js, Type
 npm install
 ```
 
-2. Configure your Base44 project ID in `.env.local`:
-```
-NEXT_PUBLIC_BASE44_PROJECT_ID=your_base44_project_id_here
-```
 
-3. Run the development server:
+
+2. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Project Structure
 
@@ -44,7 +41,6 @@ health/
 ├── app/                 # Next.js app directory
 ├── pages/              # Page components
 ├── components/         # Reusable UI components
-├── Entities/           # Base44 entity definitions
 ├── api/                # API client configuration
 └── utils/              # Utility functions
 ```
@@ -61,6 +57,5 @@ health/
 - **Next.js 14** - React framework
 - **TypeScript** - Type safety
 - **Tailwind CSS** - Styling
-- **Base44** - Backend and authentication
 - **Recharts** - Data visualization
 - **Lucide React** - Icons
